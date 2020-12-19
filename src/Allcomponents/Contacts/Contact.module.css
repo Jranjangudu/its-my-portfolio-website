@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 20px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: contactleftright 5s infinite linear;
+  animation-direction: alternate;
+}
+
+.main > img {
+  width: 200px;
+  border: 2px solid black;
+  border-radius: 14px;
+}
+.main {
+  text-align: center;
+  margin-top: 28px;
+}
+.contact::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  border-radius: 4px;
+  margin-top: 45px;
+  background-color: black;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.contact {
+  text-shadow: 3px 2px 2px rgb(100, 97, 97);
+}
+@keyframes contactleftright {
+  from {
+    padding-top: 35px;
+  }
+  to {
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 510px) {
+  .main > img {
+    width: 100px;
+  }
+  .h3 {
+    font-size: 16px;
+  }
+}

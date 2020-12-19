@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;500&family=Rubik:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  width: 100%;
+  background-image: linear-gradient(to left, #fff 68%, #c3f5ff 20%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.rightside {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  background-color: #d6eef3;
+  margin-top: 25px;
+}
+.rightside > img {
+  max-width: 400px;
+  height: auto;
+  animation: topbottom 5s linear infinite;
+  animation-direction: alternate;
+}
+@keyframes topbottom {
+  from {
+    padding-top: 50px;
+  }
+  to {
+    padding-bottom: 50px;
+  }
+}
+.leftside {
+  color: black;
+  text-transform: uppercase;
+
+  margin-top: 25px;
+}
+.leftside h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.leftside > h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.leftside > h1 > span {
+  color: #061ffd;
+}
+.leftside > h2 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+.leftside > h2 > span {
+  color: rgb(248, 0, 0);
+}
+.leftside > .btn {
+  border-radius: 20px;
+}
+.socialicon {
+  display: flex;
+  margin-top: 15px;
+}
+.socialicon > h2 {
+  border-radius: 74px;
+  background: #fcfdfd;
+  box-shadow: 41px 41px 93px #656565, -41px -41px 93px #ffffff;
+  padding: 10px;
+  font-size: 20px;
+}
+@media (max-width: 584px) {
+  .rightside > img {
+    width: 100%;
+  }
+
+  .leftside > h1 {
+    font-size: 33px;
+  }
+  .leftside > h2 {
+    font-size: 16px;
+  }
+}
